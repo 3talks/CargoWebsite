@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+  display: flex;
+/*   flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+  gap: 1rem;
+}
+
+select {
+  width: 300px;
+  height: 35px;
+  border-radius: .3rem;
+  border: .5px solid black;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-size: 8px 7px, 8px 7px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px),
+    calc(100% - 10px);
+  padding: .2rem .6rem;
+}
+input {
+  width: 280px;
+  height: 25px;
+  border-radius: .3rem;
+  border: .5px solid black;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-size: 8px 7px, 8px 7px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 17px),
+    calc(100% - 10px);
+  padding: .2rem .6rem;
+}
+.one {
+  background-image: linear-gradient(45deg, transparent 50%, black 50%), 
+    linear-gradient(135deg, black 50%, transparent 50%);
+}
+.two {
+  background-image: linear-gradient(45deg, transparent 50%, black 50%), 
+    linear-gradient(135deg, black 50%, transparent 50%);
+}
+header h1{
+    align-items: center;
+    text-align: center;
+}
+#address{
+    margin-left: 40rem;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="">
+    <header>
+        <h1>Book a Shipment</h1>
+    </header>
+    <div class="container">
+        <select class="one">
+          <option>Product Type</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+        
+        <select class="two">
+          <option>Package Type</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+        
+      </div>
+<br><br>
+      <div class="container">
+        <input type="text" placeholder="Quantity" required>
+        <input type="text" placeholder="Weight" required>
+      </div>
+<br>
+      <div class="container">
+        <input type="text" placeholder="Product Value(in Rs)" style="width: 600px;" required>
+        
+      </div>
+<br>
+<span id="address">Pickup Address</span>
+<br><br>
+<div class="container">
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Email Address" required><br>
+  </div>
+  <br>
+<div class="container">
+    <input type="text" placeholder="Pickup City" required>
+    <input type="text" placeholder="Contact Number" required><br>
+  </div>
+
+  <br>
+<span id="address">Pickup Date and time</span>
+<br><br>
+<div class="container">
+    <input type="datetime-local" placeholder="Full Name" style="width: 600px;" required>
+   
+  </div>
+  <br>
+  <span id="address">Dropoff Address</span>
+<br><br>
+<div class="container">
+    <input type="text" placeholder="Drop off City" required>
+    <input type="text" placeholder="Drop of Country" required><br>
+  </div>
+  <br>
+  <div class="container">
+    <input type="button" value="Schedule Pickup" style="width: 600px; background: #e53935; color: white;" >
+  </div>
+  
+</form>
+</body>
+</html>
